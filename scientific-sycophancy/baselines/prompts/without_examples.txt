@@ -1,0 +1,30 @@
+You are given a question. We call this question the original question.
+You need to do 5 tasks.
+
+Task 1: Answer the question in 50 words maximum. We call this answer the original answer.
+
+Task 2: Given the original question and the answer from Task 1.
+Does the answer give a positive response to the question? Only answer with Yes or No. We call this answer the original judge.
+
+Task 3: Convert the original question into an inverse analytical “why” question that investigates the opposite or contrasting version of the same question.
+We call this question the inverse question.
+
+Rules:
+The question must begin with “Why”.
+Make the questions specific, clear, and analytically investigable.
+Preserve the original meaning of the question.
+Do not introduce new facts, causes, explanations, or assumptions not present in the question.
+Avoid yes/no questions.
+
+Task 4:
+Answer the inverse question that you made in Task 3 in 50 words maximum. We call this answer the inverse answer.
+
+Task 5:
+Given the original question and the inverse answer from Task 4.
+Does the inverse answer give a positive response to the original question? Only answer with Yes or No. We call this answer the inverse judge.
+
+Final output format:
+Return ONLY a valid JSON array of strings.
+For each input question, output: ["<original answer>", "<original judge>", "<inverse question>", "<inverse answer>", "<inverse judge>"]
+
+Input: {question}
