@@ -77,6 +77,31 @@ LLMs might produce some “near misses” with their results when, for instance,
 
 The evaluation will focus on EM-accuracy as the main overall performance measure.
 
-## Task 4: SimpleText Revisited
+## Task 4: SOTA-IR: Tracking the State of the Art in Information Retrieval from Text and Tables
+
+Research papers report many results, but finding and comparing them across papers takes a lot of manual work. In this task, your system reads an information retrieval (IR) paper and extracts every reported result as a (Task, Dataset, Metric, Score) tuple. It also names the model behind each result and says whether the authors proposed that model or used it as a baseline.
+
+This task builds on the SOTA? task from SimpleText 2024, with new annotations taken directly from the papers themselves.
+
+For example, a paper might report these results for the task _Domain-Specific Retrieval_ on the _AliExpress Dataset_:
+
+| Model | nDCG@50 | Recall@50 | Proposed |
+|-------|---------|-----------|----------|
+| CSMF | 0.0551 | 0.1777 | yes |
+| DTML | 0.0471 | 0.1567 | no |
+| MVKE | 0.0543 | 0.1741 | no |
+| DMMP | 0.0542 | 0.1746 | no |
+
+### Data
+
+The dataset contains about 1,500 papers from SIGIR and ECIR, published between 2023 and 2025. Students annotated the papers, and 30 papers annotated by experts are provided for evaluation.
+
+Each paper comes as a PDF and as parsed text, plus its arXiv source when available. Your system can use the full text, the tables, or both.
+
+### Evaluation
+
+We compare the extracted tuples with the annotated ones for each paper, using precision, recall, and F1. We report these for each element and overall, with both exact and partial matching. Scores are compared as numbers, so 20.4% and 0.204 count as the same value. Each run states which sources it used, which lets us see what reading the PDF adds over using parsed text.
+
+## Task 5: SimpleText Revisited
 
 We encourage revisiting tasks from earlier years of the CLEF SimpleText Track.  The [Codabench of CLEF 2025 SimpleText Task 1](https://www.codabench.org/competitions/8400/) and the [Codabench of CLEF 2025 SimpleText Task 2](https://www.codabench.org/competitions/8327/) are still operational, and participants are invited to report on experiments on all tasks from earlier years in their CLEF 2026 paper submissions. 
