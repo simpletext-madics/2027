@@ -49,3 +49,5 @@ title: Organisers
 [Benjamin Vendeville](https://www.linkedin.com/in/benjamin-vendeville/?originalSubdomain=fr), University of Western Brittany, France
 
 [Jan Bakker](https://www.illc.uva.nl/People/Table/person/5737/Jan-Bakker), University of Amsterdam, The Netherlands
+
+[Alaa ElEbshihy](https://informatics.tuwien.ac.at/people/alaa-el-ebshihy), TU Wien, Austria
