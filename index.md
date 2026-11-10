@@ -28,7 +28,9 @@ The main goal of the CLEF 2026 SimpleText track is to advance the field of natur
   - Task 2.3 - Avoid Creative Generation and Perform Grounded Generation by Design
 - [Task 3](./tasks): Research Area Classification
   - Task 3 is a new task that asks for the classification of scientific articles by research area.
-- [Task 4](./tasks): SimpleText Revisited
+- [Task 4](./tasks): SOTA-IR: Tracking the State of the Art in Information Retrieval from Text and Tables
+  - Extract every result reported in an information retrieval paper as a (Task, Dataset, Metric, Score) tuple, and say whether each model was proposed by the authors or used as a baseline.
+- [Task 5](./tasks): SimpleText Revisited
   - We encourage revisiting tasks from earlier years of the CLEF SimpleText Track.
   - The [Codabench of CLEF 2025 SimpleText Task 1](https://www.codabench.org/competitions/8400/) and the [Codabench of CLEF 2025 SimpleText Task 2](https://www.codabench.org/competitions/8327/) are still operational, and participants are invited to report on experiments on all tasks from earlier years in their CLEF 2026 paper submissions. 
  
