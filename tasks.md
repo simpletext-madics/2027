@@ -24,7 +24,22 @@ The CLEF SimpleText track introduced the Cochrane-auto corpus, derived from biom
 
 Cochrane-auto provides authentic parallel data produced by the same authors, enabling true document-level simplification. It incorporates advanced simplification techniques such as sentence merging, reordering, and alignment with discourse structure. This approach contrasts with more standard simplification corpora in that it realigns data at the paragraph, sentence, and document levels.
 
-We have crawled newly published Cochrane systematic reviews over the last year, and this new data will be the main test data for evaluation in 2026, focusing on two subtasks:
+**New in 2027:** we introduce section-level text simplification, longer full abstracts, and non-English data.
+
+We have converted the 172 Cochrane abstracts published in 2025/2026 into the Cochrane-Section format, a section-aligned version of the Cochrane abstracts and plain language summaries. For each abstract, we include all seven sections: (1) Background, (2) Objectives, (3) Search methods, (4) Selection criteria, (5) Data collection and analysis, (6) Main results, and (7) Authors' conclusions. Earlier editions used only the last two. Each section, as well as the full abstract, is a separate "document" to simplify.
+
+Part of these abstracts is also available in other languages:
+
+| Language | Code | Abstracts | Documents | Sentences |
+|----------|------|----------:|----------:|----------:|
+| English | `en` | 172 | 3,289 | 20,259 |
+| Spanish | `es` | 159 | 1,286 | 7,553 |
+| Farsi | `fa` | 152 | 1,223 | 6,986 |
+| French | `fr` | 137 | 1,122 | 7,220 |
+| Korean | `ko` | 61 | 494 | 3,146 |
+| Thai | `th` | 43 | 347 | 843 |
+| Portuguese | `pt` | 24 | 195 | 1,201 |
+| Chinese | `zh_HANS` | 15 | 85 | 1,434 |
 
 ### Task 1.1 - Sentence-level Scientific Text Simplification
 The goal of this task is to simplify whole sentences extracted from the Cochrane-auto dataset
@@ -32,24 +47,30 @@ The goal of this task is to simplify whole sentences extracted from the Cochrane
 ### Task 1.2 - Document-level Scientific Text Simplification 
 The goal of this task is to simplify whole documents extracted from the Cochrane-auto dataset
 
+### Task 1.3 - Section-level Scientific Text Simplification
+The goal of this task is to simplify individual sections, and the full abstracts, of new Cochrane abstracts (in English).
+
+### Task 1.4 - Multilingual Scientific Text Simplification
+The goal of this task is to simplify Cochrane abstracts in all available languages.
+
 ### Evaluation
 To evaluate results, we will use standard automatic evaluation measures (SARI, BLEU, LENS, BERTscore, etc.) in combination with human assessment of samples of the submissions by translation students and professionals.
 
 ## Task 2: Controlled Creativity: Identify and Avoid Hallucination
 
-Task 2 focuses on identifying and evaluating creative generation and information distortion in text simplification.  We have annotated CLEF 2025 submissions to the track for potential overgeneration and other generated content that we cannot attribute to tokens in the source data.   Perhaps surprisingly, _overgeneration_ is not uncommon and ranges from a text completion model that continues after correctly simplifying a source sentence to LLM comments or notes on how the text is simplified, and from obvious extraction noise, such as left-in prompts, to conversational comments from the model used.
+Task 2 focuses on identifying and evaluating creative generation and information distortion in text simplification. We have annotated CLEF 2026 submissions to the track for potential overgeneration and other generated content that we cannot attribute to tokens in the source data. Perhaps surprisingly, _overgeneration_ is not uncommon and ranges from a text completion model that continues after correctly simplifying a source sentence to LLM comments or notes on how the text is simplified, and from obvious extraction noise, such as left-in prompts, to conversational comments from the model used.
 
 ### Task 2.1 - Identify Creative Generation at Document Level
 
-This task aims to detect creative generation at the abstract or document level.  The task is to detect what sentences are fully grounded on source input (a) without and (b) with access to the source sentences, and thereby also label those introducing significant new content. Task 2.1 is a post-hoc identification or explanation task.
+This task aims to detect creative generation at the abstract or document level. The task is to detect what sentences are fully grounded on source input (a) without and (b) with access to the source sentences, and thereby also label those introducing significant new content. Task 2.1 is a post-hoc identification or explanation task.
 
-For 2026, we focus on significant new content (typically an entire sentence) introduced in the prediction.  
+We focus on overgeneration consisting of entire sentences without support in the source abstract. We provide realistic system outputs from participants in CLEF 2026, and large-scale training data with realigned sentences that lack source support.
 
 ### Task 2.2 - Detect and Classify Information Distortion Errors in Simplified Sentences
 
-This task tries to "mimic" traditional manual human evaluation by LLMs.  focuses on detecting information distortion in simplified sentences and classifying the types of errors.  As text-generation-based automatic evaluation measures (such as BLEU and SARI), which rely on text overlap, are notoriously imprecise, we need to conduct human evaluations of fluency, simplicity, and factuality. Usually, these annotations are not reusable. However, we use them as the training and test data for systems to automatically detect and annotate such information distortion in real CLEF submissions.  The manual annotations of CLEF 2025 Task 1 submissions can be reused as ground truth data for information distortion classification in CLEF 2026 Task 2.
+This task tries to "mimic" traditional manual human evaluation by LLMs. focuses on detecting information distortion in simplified sentences and classifying the types of errors. As text-generation-based automatic evaluation measures (such as BLEU and SARI), which rely on text overlap, are notoriously imprecise, we need to conduct human evaluations of fluency, simplicity, and factuality. Usually, these annotations are not reusable. However, we use them as the training and test data for systems to automatically detect and annotate such information distortion in real CLEF submissions. The machine and human annotations of CLEF 2026 Task 1 submissions are reused as ground truth data for information distortion classification in CLEF 2027 Task 2.
 
-For 2026, we focus on identifying the type of overgeneration.
+We focus on identifying the type of information distortion in sentences detected as overgeneration, using an overgeneration type classification.
 
 ### Task 2.3 - Avoid Creative Generation and Perform Grounded Generation by Design
 
