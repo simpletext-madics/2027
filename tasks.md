@@ -8,7 +8,10 @@ title: Tasks
 {% include navbar.md %}
 
 ## How to participate
+<!-- ---
 In order to participate, you should sign up at the [CLEF](https://clef-labs-registration.dipintra.it/) website: [https://clef-labs-registration.dipintra.it/](https://clef-labs-registration.dipintra.it/). 
+--- -->
+The registration link to participate will open soon.
 
 All team members should join the SimpleText mailing list:
 [https://groups.google.com/g/simpletext](https://groups.google.com/g/simpletext). 
