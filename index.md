@@ -38,7 +38,7 @@ The main goal of the CLEF 2027 SimpleText track is to advance the field of natur
 
 ## How to participate
 
-In order to participate, you should sign up at the [CLEF](https://clef-labs-registration.dipintra.it/) website. The registration dates will be announced on the [CLEF 2027](https://clef2027.clef-initiative.eu/) website.
+The registration link to participate will open soon. The registration dates will be announced on the [CLEF 2027](https://clef2027.clef-initiative.eu/) website.
 
 All team members should join the SimpleText mailing list:
 [https://groups.google.com/g/simpletext](https://groups.google.com/g/simpletext). 

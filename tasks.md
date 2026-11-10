@@ -80,6 +80,9 @@ The training data (Climate-FEVER) and baselines are available on [GitHub](https:
 
 This is a binary classification task. Submissions are evaluated with accuracy, precision, recall and F1. The ranking uses macro-F1.
 
+### Codabench for Task 3
+[Task 3: Scientific Sycophancy](https://www.codabench.org/competitions/18495/)
+
 ## Task 4: SOTA-IR: Tracking the State of the Art in Information Retrieval from Text and Tables
 
 Research papers report many results, but finding and comparing them across papers takes a lot of manual work. In this task, your system reads an information retrieval (IR) paper and extracts every reported result as a (Task, Dataset, Metric, Score) tuple. It also names the model behind each result and says whether the authors proposed that model or used it as a baseline.
