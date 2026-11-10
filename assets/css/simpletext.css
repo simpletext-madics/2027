@@ -1,0 +1,166 @@
+/* Colours */
+:root {
+  --text: #16243a;
+  --grey: #4a5872;
+  --blue: #1d6fb8;
+  --background: #f5f7fa;
+  --border: #dde3ec;
+}
+
+/* Page */
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+}
+
+a {
+  color: var(--blue);
+}
+
+h1,
+h2,
+.brand-title {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brand-tagline,
+.event {
+  color: var(--grey);
+}
+
+/* Menu */
+.nav-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  padding: 12px 0;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--grey);
+  text-decoration: none;
+}
+
+.nav-links a[aria-current="page"] {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.editions {
+  padding: 12px 0;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+/* Content */
+main.wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.content h2 {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.content h1 + h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.content table {
+  border-collapse: collapse;
+}
+
+.content th,
+.content td {
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+/* Footer */
+.site-footer {
+  background: white;
+  border-top: 1px solid var(--border);
+  color: var(--grey);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Small screens */
+@media (max-width: 700px) {
+  .content {
+    padding: 20px;
+  }
+}

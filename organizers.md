@@ -15,7 +15,6 @@ title: Organisers
 [Eric SanJuan](https://termwatch.es/), Avignon Université, LIA, France
 
 
-
 [Liana Ermakova](https://nouveau.univ-brest.fr/hcti/fr/membre/liana-ermakova), Université de Bretagne Occidentale, HCTI, France
 
 [Stéphane Huet](https://cv.hal.science/shuet) Avignon Université, LIA, France
