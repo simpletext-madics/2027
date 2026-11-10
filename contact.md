@@ -9,10 +9,10 @@ title: Contacts
 
 ## 🌐 Our resources
 
-- **Website** : [simpletext-project.com](http://simpletext-project.com/)
+- **Website** : [simpletext-project.com](https://simpletext-project.com/2027/)
 - **Twitter** : [@SimpletextW](https://twitter.com/SimpletextW)
 - **Google Group** : [SimpleText Community](https://groups.google.com/g/simpletext)
-- **CLEF Website** : [CLEF Initiative 2026](https://clef2025.clef-initiative.eu/)
+- **CLEF Website** : [CLEF Initiative 2027](https://clef2027.clef-initiative.eu/)
 
 ---
 

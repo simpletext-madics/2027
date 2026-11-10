@@ -3,8 +3,8 @@ layout: default
 title: Publication
 ---
 
-# CLEF 2026 SimpleText: Publications
+# CLEF 2027 SimpleText: Publications
 
 {% include navbar.md %}
 
-COMING SOON
+Coming soon

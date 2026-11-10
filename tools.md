@@ -2,7 +2,7 @@
 layout: default
 title: Tools
 ---
-# CLEF 2026 SimpleText: Tools
+# CLEF 2027 SimpleText: Tools
 
 {% include navbar.md %}
 
@@ -26,3 +26,8 @@ Tools and libraries that specialise in this include:
 * Q2: A model designed for quality evaluation of text generation, helping to ensure that identified concepts are accurately explained without introducing errors.
     
 * These resources, combined with intelligent algorithms, ensure that users receive trustworthy and comprehensible explanations for even the most difficult scientific concepts.
+
+### Task 3: Scientific Sycophancy
+
+* [Training data and baselines](https://github.com/simpletext-madics/scientific-sycophancy): the Climate-Fever training data, with TF-IDF, Sentence-BERT, DeBERTa and LLM-as-a-judge baselines and an evaluation script
+

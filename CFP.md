@@ -4,7 +4,7 @@ title: Call for papers
 ---
 
 
-# CLEF 2026 SimpleText: Call for papers
+# CLEF 2027 SimpleText: Call for papers
 
 {% include navbar.md %}
 
