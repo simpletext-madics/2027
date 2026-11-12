@@ -45,8 +45,12 @@ title: Organisers
 ## Other organisers and partners
 -->
 
-[Benjamin Vendeville](https://www.linkedin.com/in/benjamin-vendeville/?originalSubdomain=fr), University of Western Brittany, France
+<!-- [Benjamin Vendeville](https://www.linkedin.com/in/benjamin-vendeville/?originalSubdomain=fr), University of Western Brittany, France -->
 
 [Jan Bakker](https://www.illc.uva.nl/People/Table/person/5737/Jan-Bakker), University of Amsterdam, The Netherlands
 
 [Alaa ElEbshihy](https://informatics.tuwien.ac.at/people/alaa-el-ebshihy), TU Wien, Austria
+
+[Gautam Kishore Shahi](https://www.uni-due.de/digicat/shahi.php)
+
+[Ezra Smink](https://www.linkedin.com/in/ezra-smink-016952254/), Université de Bretagne Occidentale, France and University of Amsterdam, The Netherlands
