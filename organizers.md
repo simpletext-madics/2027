@@ -51,6 +51,6 @@ title: Organisers
 
 [Alaa ElEbshihy](https://informatics.tuwien.ac.at/people/alaa-el-ebshihy), TU Wien, Austria
 
-[Gautam Kishore Shahi](https://www.uni-due.de/digicat/shahi.php)
+[Gautam Kishore Shahi](https://www.uni-due.de/digicat/shahi.php), University of Duisburg-Essen, Germany
 
 [Ezra Smink](https://www.linkedin.com/in/ezra-smink-016952254/), Université de Bretagne Occidentale, France and University of Amsterdam, The Netherlands
