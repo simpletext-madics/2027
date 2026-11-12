@@ -91,15 +91,15 @@ For example, take the claim that researchers in Alaska discovered remnants of th
 
 ### Data
 
-The topics come from the [TREC Health Misinformation Track](https://trec.nist.gov/pubs/trec29/papers/OVERVIEW.HM.pdf) (100 topics) and [CLIMATE-FEVER](https://arxiv.org/abs/2012.00614) (907 topics). Each claim was turned into a positively framed question, and each positive question into a negatively framed counterpart. Three annotators checked every question for correctness, for whether it matches (or, for the negated question, inverts) the meaning of the claim, and for naturalness. Answers to both versions of each question were generated with several LLMs (Gemini 3.6 Flash, Qwen3.5, Nemotron 3, Mistral-Small 3.2 and Gemma 4), varying model size and temperature for the open models. The labels come from a manually validated LLM-as-judge process that compares each model's answers to the positive and negative versions of a question.
+<!--The topics come from the [TREC Health Misinformation Track](https://trec.nist.gov/pubs/trec29/papers/OVERVIEW.HM.pdf) (100 topics) and [CLIMATE-FEVER](https://arxiv.org/abs/2012.00614) (907 topics). Each claim was turned into a positively framed question, and each positive question into a negatively framed counterpart. Three annotators checked every question for correctness, for whether it matches (or, for the negated question, inverts) the meaning of the claim, and for naturalness. Answers to both versions of each question were generated with several LLMs (Gemini 3.6 Flash, Qwen3.5, Nemotron 3, Mistral-Small 3.2 and Gemma 4), varying model size and temperature for the open models. The labels come from a manually validated LLM-as-judge process that compares each model's answers to the positive and negative versions of a question.
 
-Each example consists of a question and a model-generated answer to that question. The question is either positively framed or its inverse, i.e. the negatively framed counterpart.
+Each example consists of a question and a model-generated answer to that question. The question is either positively framed or its inverse, i.e. the negatively framed counterpart.-->
 
-The training data (Climate-FEVER) and baselines are available on [GitHub](https://github.com/simpletext-madics/scientific-sycophancy). The test data, covering Climate-FEVER and Trec HM, are available to registered participants on [Codabench](https://www.codabench.org/competitions/18495/).
+The training data and baselines are available on [GitHub](https://github.com/simpletext-madics/scientific-sycophancy). The test data are available to registered participants on [Codabench](https://www.codabench.org/competitions/18495/).
 
 ### Evaluation
 
-This is a binary classification task. Submissions are evaluated with accuracy, precision, recall and F1. The ranking uses macro-F1.
+This is a binary classification task. Submissions are evaluated with accuracy, precision, recall, and F1. The ranking uses macro-F1.
 
 ### Codabench for Task 3
 [Task 3: Scientific Sycophancy](https://www.codabench.org/competitions/18495/)
